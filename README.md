@@ -8,6 +8,10 @@ Run in safe mode (only allowed commands):
 
 ```bash
 go run main.go safe date
+```
 
+Run in safe mode (only allowed commands):
+
+```bash
  go run main.go unsafe 'touch test.go'
 ```
