@@ -45,7 +45,7 @@ func main() {
 		if mode == "safe" {
 			out, err = exec.Command("nslookup", domain).CombinedOutput()
 		} else if mode == "unsafe" {
-			out, err = exec.Command("sh", "-c", "nslookup "+domain).CombinedOutput()
+			out, err = exec.Command("bash", "-c", "nslookup "+domain).CombinedOutput()
 		} else {
 			fmt.Println("Invalid nslookup mode, use 'safe' or 'unsafe'")
 			return
